@@ -1,9 +1,9 @@
-To Install: Download all files
+Intructions:
 
-To Run:
+1) Download All Files
 
-Setup input file directories (mirrors the exp2 folder with subfolders: common, operator, planner and target_value).
+2) Setup input file directories (mirrors the exp2 folder with subfolders: common, operator, planner and target_value).
 
-Run the preprocessor: python3 dshieldFirePreprocessor.py
+3) Run the preprocessor: python3 dshieldFirePreprocessor.py
 
-Run the planner: python3 dshieldFireApp.py
+4) Run the planner: python3 dshieldFireApp.py
