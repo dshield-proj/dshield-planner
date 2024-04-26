@@ -1,4 +1,4 @@
-Intructions:
+Instructions:
 
 1) Download All Files
 
