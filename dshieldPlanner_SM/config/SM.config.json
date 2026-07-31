@@ -1,0 +1,34 @@
+{ "useCase": "SM",
+  "dataPath": "./inputs/SM/",
+  "satList": ["1", "2", "3"], #[1,2,3],
+  "gsList": [], # "gsList": ["PH", "MI"], #"gsList": ["HI", "CHI","AUS", "AUS-L", "KI","PH", "MI"],
+  "cycleDuration": 1 * 3600, # 1 * 3600, #1.75 * 3600, #1.75 * 3600,
+  "planHorizon": 2 * 3600, #24 * 3600,
+  "maxTick": 2 * 3600,
+  "timeLimit":  1 * 3600, #3 * 3600, #12 * 3600, #3600,  # secs,
+  "mipGap":  None, #0.01,    # 0.03 = 3 % mipGap, 0.018 = 1.8% gap
+  "experimentRoot": "7_GS_20250108",
+  "experimentDate": "20250108", #"20240226", #"20230705", #20240226", #20250108", #20230705", #20250108", #20240226", #exp3", #"exp2_revised",
+  "experimentRun": "RUN001",
+  "targetValFiles": ["TV_PreFireOnly.csv"], #"TV_ActiveFireOnly.csv", #TV_ActiveAndPreFire.csv", #AndPreFire.csv", #AndPreFire.csv", #TV_ActiveFireOnly.csv", #"TV_ActiveAndPreFire.csv",
+  "rwdThreshold": None, #0.08, 0.05, #0.1,
+  "angleRange": [20,35],
+  "slewEnergyMultiplier": 0.005, # convert raw absolute slew energy from table into percentage (20 units = 0.1 %)
+  "obsRateLarge": 100/60,   # % of storage filled by each observation (storage limit = 60)
+  "obsRateSmall": 100/120,   # % of storage filled by each observation (storage limit = 60)
+  "dnlRate": 100/1200, # % of storage freed per downlink second (1200s = 20m to empty a full buffer = 60 images / 0.05 image/second)
+  "powerModel": "powerConfig.txt",
+  "includeSetupTimeConstraints": True,
+  "includeEnergyConstraints": True,
+  "includeSlewFlowConstraints": True,
+  "includeStorageConstraints": False,
+  "includeObsOrDnlMutexConstraints": False,  # Must be true if obs and dnl overlap
+  "includeOnlyDnlOverlappingWithObs": False,
+  "includeGsConstraints": False,
+  "includeActiveFireTargets": False, #"TODO: Remove this unused flag"
+  "includePreFireTargets": False,
+  "largeImageTargetCount": 6,
+  "cmdSetupTime": 4,  # secs
+  "rwdPrecision": None, #5, # number of decimal points
+  "solver": "gurobi"
+}
