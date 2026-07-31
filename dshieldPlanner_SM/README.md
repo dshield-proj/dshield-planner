@@ -21,8 +21,8 @@ You also need to install gurobi py even if you don't use it (or have a license f
 
 2. cd to this directory /dshieldPlanner_SM/
 
-3. To run the planner, run the Python program dshieldPlanner.py. 
+3. To run the planner, run the Python program dshieldPlanner_SM.py. 
 
 Here is an example how how to run the planner from terminal command line:
 
-% python dshieldPlanner.py 
+% python  dshieldPlanner_SM.py
