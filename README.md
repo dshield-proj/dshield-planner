@@ -17,8 +17,8 @@ You also need to install gurobi py even if you don't use it (or have a license f
 
 ### How to run the D-SHIELD Planner ###
 
-1. Make sure you have downloaded the d-shield demo data to your computer
-
+1. Make sure you have downloaded the d-shield demo data to your computer. You can find it here with a README file.
+https://github.com/dshield-proj/dshield-2026-demo/tree/main
 
 
 2. To run the planner, run the Python program dshieldPlanner.py with two command line parameters: demo_data_directory and plan_creation_date.
@@ -30,7 +30,7 @@ For example specifying '20260703' will use the planner inputs corresponding to d
 
 Here is an example how how to run the planner from terminal command line with the two parameters
 
-% python dshieldPlanner.py '/Users/Applications/dshield-demo-data-2026/' '20260703'
+% python dshieldPlanner.py '/Users/Applications/dshield-2026-demo/' '20260703'
 
 
 
